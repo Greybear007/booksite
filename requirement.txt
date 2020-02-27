@@ -1,3 +1,4 @@
 -i http://pypi.doubanio.com/simple
 Django~=3.03
+Pillow
 -e .
