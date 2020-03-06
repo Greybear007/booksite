@@ -1,0 +1,17 @@
+<div class="book">
+	{% if succeed %}
+		{{ succeed }}
+	{% endif %}
+
+	<form class="form-group" auction="books:bookadd" method="POST">
+		{% csrf_token %}
+		<input name="book", type="hidden" value="{{ request.path }}">
+		<li>{{ "书名" }}<input name="name" type='text'></li>
+		<li>{{ "书名" }}<input name="name" type='text'></li>
+
+		<input type="submit" value="提交">
+	</form>
+</div>
+
+
+

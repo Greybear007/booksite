@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+
+from .models import Books, Category, Author 
+
+admin.site.register(Books)
+admin.site.register(Category)
+admin.site.register(Author)
